@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You 🌸</title>
+    <style>
+        body {
+            background-color: #fce4ec;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        h2 {
+            color: #d81b60;
+            margin-bottom: 5px;
+        }
+        p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .next-btn {
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(233, 30, 99, 0.3);
+        }
+        .next-btn:hover {
+            background-color: #c2185b;
+        }
+        .note-text {
+            font-size: 13px;
+            color: #888;
+            margin-top: 8px;
+        }
+        .hidden-msg {
+            display: none;
+            margin-top: 20px;
+            font-size: 15px;
+            color: #2c3e50;
+            line-height: 1.6;
+            background: #fff0f5;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: right;
+            border-right: 4px solid #e91e63;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>For You 🌸</h2>
+        <p>Have a beautiful day sweetheart 💕</p>
+
+        <!-- Next Button -->
+        <button class="next-btn" onclick="showMessage()">Next</button>
+        <div class="note-text">zrori bat hai agay jnu</div>
+
+        <!-- Hidden Message -->
+        <div id="secretMessage" class="hidden-msg">
+            Agar apko mujh se muhabbat hai na, toh yeh baat bolen ke main Allah Pak ko hazir nazir rakh kar yeh kehti hoon ke main Saad ko apna nikah mein qabul karti hoon aur Saad ke ilawa kabhi kisi se baat nahi karungi na kisi se shadi karungi, yeh baat main Allah Pak ko hazir nazir rakh kar kehti hoon.ider jvab dana voic man .. janu its my conatct number:(03447433988📲🤙)
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            var msg = document.getElementById("secretMessage");
+            msg.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
